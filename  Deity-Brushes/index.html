@@ -1,0 +1,785 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Brushes-and-Features-in-Development/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Deity Brushes - FastAsyncVoxelSniper Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deity-brushes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="FastAsyncVoxelSniper Wiki" class="md-header__button md-logo" aria-label="FastAsyncVoxelSniper Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FastAsyncVoxelSniper Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deity Brushes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+            
+              <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheMeinerLP/fastasyncvoxelsniper_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheMeinerLP/fastasyncvoxelsniper_docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="FastAsyncVoxelSniper Wiki" class="md-nav__button md-logo" aria-label="FastAsyncVoxelSniper Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    FastAsyncVoxelSniper Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheMeinerLP/fastasyncvoxelsniper_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheMeinerLP/fastasyncvoxelsniper_docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome to FastAsyncVoxelSniper's documentation!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Deity Brushes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Deity Brushes
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-entity-brush" class="md-nav__link">
+    The Entity Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-removal-brush" class="md-nav__link">
+    Entity Removal Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-heat-ray" class="md-nav__link">
+    The Heat Ray
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-lightning-brush" class="md-nav__link">
+    The Lightning Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voxellightning-mode" class="md-nav__link">
+    VoxelLightning Mode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-meteor-brush" class="md-nav__link">
+    The Meteor Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-weather-wizard" class="md-nav__link">
+    The Weather Wizard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-warp-in-style-brush" class="md-nav__link">
+    The Warp-in-Style Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-jockey-brush" class="md-nav__link">
+    The Jockey Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-point-circle-brush" class="md-nav__link">
+    Three-Point Circle Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-brush" class="md-nav__link">
+    Move Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punish-brush" class="md-nav__link">
+    Punish Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sign-overwrite-brush" class="md-nav__link">
+    Sign Overwrite Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extrude-brush" class="md-nav__link">
+    Extrude Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snow-cone-brush" class="md-nav__link">
+    Snow cone brush
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Brushes-and-Features-in-Development/" class="md-nav__link">
+        Brushes and Features in Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Commands/" class="md-nav__link">
+        These are the Voxel Sniper commands
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Environment-brushes/" class="md-nav__link">
+        Environment brushes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Stencil-Brush/" class="md-nav__link">
+        Stencil Brush
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tool-brushes/" class="md-nav__link">
+        Tool brushes
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-entity-brush" class="md-nav__link">
+    The Entity Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-removal-brush" class="md-nav__link">
+    Entity Removal Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-heat-ray" class="md-nav__link">
+    The Heat Ray
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-lightning-brush" class="md-nav__link">
+    The Lightning Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voxellightning-mode" class="md-nav__link">
+    VoxelLightning Mode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-meteor-brush" class="md-nav__link">
+    The Meteor Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-weather-wizard" class="md-nav__link">
+    The Weather Wizard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-warp-in-style-brush" class="md-nav__link">
+    The Warp-in-Style Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-jockey-brush" class="md-nav__link">
+    The Jockey Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-point-circle-brush" class="md-nav__link">
+    Three-Point Circle Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-brush" class="md-nav__link">
+    Move Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punish-brush" class="md-nav__link">
+    Punish Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sign-overwrite-brush" class="md-nav__link">
+    Sign Overwrite Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extrude-brush" class="md-nav__link">
+    Extrude Brush
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snow-cone-brush" class="md-nav__link">
+    Snow cone brush
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="deity-brushes">Deity Brushes</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These brushes do not use Performers</p>
+</div>
+<h2 id="the-entity-brush">The Entity Brush</h2>
+<p><strong>/b en [EntityType]</strong>: The Entity Brush allowes a user to snipe-spawn single or groups (defined by the brush size variable) of  entities from a safe distance. (Item, XPOrb, Painting, Arrow, Snowball, Fireball, SmallFireball, ThrownEnderpearl, EyeOfEnderSignal, ThrownExpBottle, PrimedTnt, FallingSand, Minecart, Boat, Creeper, Skeleton, Spider, Giant, Zombie, Slime, Ghast, PigZombie, Enderman, CaveSpider, Silverfish, Blaze, LavaSlime, EnderDragon, WitherBoss, Bat, Witch, Pig, Sheep, Cow, Chicken, Squid, Wolf, MushroomCow, SnowMan, Ozelot, VillagerGolem, Villager, EnderCrystal). <em>Thanks to xmlns for use of his Mob Class from SpawnMob.</em></p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>After entering "/b en Sheep" and "/b 5", clicking the sniper will spawn 5 sheep at the snipe-point.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You must have the animal or monster you wish to spawn enabled in Bukkit to be able to create it with VoxelSniper.</p>
+</div>
+<p><strong>/b en info</strong>: Shows a full list of available entities.</p>
+<h2 id="entity-removal-brush">Entity Removal Brush</h2>
+<p><strong>/b er</strong>: Removes all entities except itemframes and paintings within your brush size in chunks.</p>
+<h2 id="the-heat-ray">The Heat Ray</h2>
+<p><strong>/b hr</strong>: The Heat Ray Brush burns nearby blocks and cinders  others to a "burned" state by altering them to materials like  cobblestone, or obsidian. Try torching a village with it! The Heat Ray  Brush uses the brush size variable to widen or narrow it's beam.</p>
+<ul>
+<li><strong>/b hr oct[int]</strong>: Octaves parameter for the noise generator.</li>
+<li><strong>/b hr amp[float]</strong>: Amplitude parameter for the noise generator.</li>
+<li><strong>/b hr freq[float]</strong>: Frequency parameter for the noise generator.</li>
+</ul>
+<h2 id="the-lightning-brush">The Lightning Brush</h2>
+<p><strong>/b light</strong>: Lightning will strike the block sniped.</p>
+<h2 id="voxellightning-mode">VoxelLightning Mode</h2>
+<p><strong>/vs lightning</strong>: Engages VoxelLightning mode. Each time you pull the trigger on your sniper, the block clicked will also be struck by lightning.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Bear in mind your regular snipe action will be performed in ADDITION to the lighting strike. If all you want is lightning, use the lightning brush.</p>
+</div>
+<h2 id="the-meteor-brush">The Meteor Brush</h2>
+<p><strong>/b meteor</strong>: A ghast fireball is launched towards the block sniped. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Can not be undone! Also, anti-grief plugins that block explosions may nerf this brush.</p>
+</div>
+<h2 id="the-weather-wizard">The Weather Wizard</h2>
+<p><strong>/vs weather</strong>: Clears all rain and snow in the next few seconds.</p>
+<h2 id="the-warp-in-style-brush">The Warp-in-Style Brush</h2>
+<p><strong>/b w</strong>: This brush will warp you to the block sniped using the  arrow. The gunpowder will create a lightning bolt at the sniped block,  as well: Amaze and astound your friends! </p>
+<h2 id="the-jockey-brush">The Jockey Brush</h2>
+<p><strong>/b jockey</strong> This brush allows you to sit on any other player or creature. Ride a slime, or just annoy the holy hell out of someone you wish would log off. Crotch + Face = FUN!
+* <strong>-i:[y|n]</strong> - Enables (y) or disables (n) the inverse mode. The inverse modes lets your target sit on you.
+* <strong>-po:[y|n]</strong> - Enables (y) or disables (n) the player-only mode. If the player-only mode is enabled, only other players can used as a target.
+* <strong>-s:[y|n]</strong> - Enables (y) or disables (n) the stack mode. If enabled, stacks all entities above the player within the players brush size.</p>
+<h2 id="three-point-circle-brush">Three-Point Circle Brush</h2>
+<p><strong>Missing Image</strong></p>
+<p>Three-point circle brush example </p>
+<p><strong>/b tpc accurate|default|smooth</strong> - Use the arrow brush to select three points, which form the corners of a triangle. Use the powder brush to have VoxelSniper place the circle that circumscribes that  triangle. Works at ANY angle, although some angles work better than  others.
+* <strong>accurate|default|smooth</strong> - Toggles how picky this brush is about placing blocks.
+    * <em>accurate</em> - Only those blocks which are as close to mathematically perfect as possible.
+    * <em>default</em> - A balanced mode which is generally pretty accurate, but can still leave gaps at some odd angles.
+    * <em>smooth</em> - The brush will place every block that could reasonably be expected to be part of the circle. Tends to make the discs thicker. May still miss a few blocks in some worst-case scenarios, but will get most of just about any circle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only available in versions 5.155 and higher.</p>
+</div>
+<h2 id="move-brush">Move Brush</h2>
+<p>The Move Brush will move a selection by a specified amount of blocks. (Max 5000000 blocks)
+* <strong>/b mv x[#] y[#] z[#]</strong> - Specifies the amount and direction the selection will be moved. (X: positive number =&gt; east, Y: positive number =&gt; up, Z: positive number =&gt; south) 
+* <strong>/b mv reset</strong> - Resets the amount and direction to 0</p>
+<h2 id="punish-brush">Punish Brush</h2>
+<p>This brush has its own permission: <strong>voxelsniper.punish</strong></p>
+<p>The punish brush will apply a specific punishment to everybody in the brush size radius. </p>
+<p><strong>/b p [punishment]</strong></p>
+<p>You can list all available punishments by typing: <strong>/b p info</strong>.</p>
+<p>Some punishments accept an additional potion level parameter. This will basically define how "intensive" the effect is and the default is 10. This is specified with <strong>/vc [level]</strong>. You can also define the length in seconds with <strong>/vh [duration]</strong>.</p>
+<h2 id="sign-overwrite-brush">Sign Overwrite Brush</h2>
+<p>The sign overwrite brush overwrites the text of signs. <strong>/b sio</strong></p>
+<p>The arrow sets one/multiple sign/signs. The powder tool will read the text of the targeted sign into the internal buffer.</p>
+<p>Available parameters: </p>
+<ul>
+<li><strong>-1 [...]</strong> - Sets the first text line of the internal buffer. (e.g. /b sio -1 This is text.)</li>
+<li><strong>-2 [...]</strong> - Sets the second text line of the internal buffer. (e.g. /b sio -2 This is text.) </li>
+<li><strong>-3 [...]</strong> - Sets the third text line of the internal buffer. (e.g. /b sio -3 This is text.)</li>
+<li><strong>-4 [...]</strong> - Sets the fourth text line of the internal buffer. (e.g. /b sio -4 This is text.)</li>
+<li><strong>-clear</strong> - Clears the internal buffer by setting all lines to an empty string. (Alias: -c)</li>
+<li><strong>-multiple [on|off]</strong> - Enables or disables the ranged mode. With ranged mode enabled all sings in a box (with x=z=2<em>brushSize+1 and y=2</em>voxelHeight+1) will be set.  Keep in mind that the maximum length of a sign line is 15.</li>
+</ul>
+<h2 id="extrude-brush">Extrude Brush</h2>
+<ul>
+<li><strong>/b ex</strong>: The extrude brush will pull or push blocks in a cylinder shape, using a disk-face as a base. The height it copies to is based on your /vh <height>, the radius of the disk-face base is  based on /b # and the blocks that are extruded are based on your /vl  settings. Clicking with the arrow will "push" inwards, clicking with the gunpowder will "pull" outwards, relative to the face clicked.</li>
+<li><strong>/b ex true</strong>: Uses a true disk for extruding.</li>
+<li><strong>/b ex false</strong>: Turns off the true disk (default).</li>
+<li><strong>/vl</strong>: Determines which block types get extruded.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>/b ex /vh 5 /b 10 /vl 1 5 <em>left click with gunpowder</em>  This would extrude all stone and wood blocks in a 10 block disk radius outward, relative to the face clicked.</p>
+</div>
+<h2 id="snow-cone-brush">Snow cone brush</h2>
+<p><strong>/b snow</strong>: Great for making snowy mountain tops. This brush only works with the gun powder and you need to click a block of snow for it to generate.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>
