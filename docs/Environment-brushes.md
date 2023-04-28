@@ -78,3 +78,25 @@ Setting up an appropriate Clone Zone.
     Often, this is as simple inverting the centroid value from the Clone Zone's. In this example, we will adjust from "/vc -1" to "/vc 1" before Stamping our clone.
 
 Examples of Stamp methods. 
+
+**Stamp a new copy of your clone zone with the Arrow tool.** The Stamp Zone comes in three flavors:
+
+* **/b cs 0**: The Default Clone Stamp pastes in the clone zone exactly as it was at the original key block's location, including the air / empty blocks.
+* **/b cs a**: No-Air Clone Stamp the Clone Zone in, but does not stamp in the air blocks from the clone zone. This will build your stamp into the surrounding landscape.
+* **/b cs f**: Fill Stamp replaces ONLY the empty blocks in the stamp zone. All blocks in the stamp zone will remain untouched. In  the example, note the missing half-block at the rear base of the stand.
+
+!!! tip
+    This function is ideal for using the clone stamp brush with clumps for terraforming.
+
+## CopyPasta Brush
+**/b cp**
+
+This is a 2-point cuboid copy and paste brush for snipers, **with rotation!**
+
+For safety reasons, Snipers are limited to copying a region no bigger than 10k blocks, which will accommodate a 21x21x21 region. Snipers may also toggle the pasting of air with **/b cp air** if they so desire. You can set the rotation with **/b cp #**, where # is 0, 90, 180 or 270 degrees clockwise. The axis of rotation should be the column of your first point selection, but that is still being tested. Functionality of this brush is as follows:
+
+1. Select two corners with the arrow (remember which you clicked first).
+2. Copy the region with the powder.
+3. Paste as many times as you would like with the powder, the blocks will be pasted as if this new point was the first block you had clicked with the arrow.
+4. You may switch rotation at any point without losing your block array, but you cannot change the axis of rotation.
+5. You may reset the brush at any time in the process by clicking the arrow a third time.
